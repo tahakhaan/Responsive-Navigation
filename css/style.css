@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f7e498;
+}
+body .wrapper .heading {
+  display: flex;
+  justify-content: space-around;
+}
+body .wrapper .heading h1 {
+  margin: 0;
+  padding: 10px;
+  font-size: 18px;
+  background-color: white;
+}
+body .wrapper .nav {
+  margin-top: 40px;
+}
+body .wrapper .nav ul {
+  margin: 0;
+  padding: 0;
+}
+body .wrapper .nav ul .box {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+body .wrapper .nav ul .box a {
+  text-decoration: none;
+  padding: 20px;
+  text-align: center;
+  background-color: burlywood;
+  margin-top: 1px;
+  color: black;
+}
+body .wrapper .nav ul .box a:hover {
+  background-color: #c4a276;
+  color: white;
+}
+body .wrapper small {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+}
+@media (min-width: 500px) {
+  body {
+    background-color: darkkhaki;
+  }
+  body .wrapper .merg .heading h1 {
+    font-size: 25px;
+  }
+  body .wrapper .merg .nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  body .wrapper .merg .nav ul a {
+    width: 80px;
+  }
+}
+@media (min-width: 700px) {
+  body {
+    background-color: darkgray;
+    margin: 0;
+    padding: 0;
+  }
+  body .wrapper .merg {
+    display: flex;
+    justify-content: space-between;
+  }
+  body .wrapper .merg .heading h1 {
+    font-size: 30px;
+    margin: 0;
+  }
+  body .wrapper .merg .nav {
+    margin: 0;
+    align-self: flex-end;
+  }
+  body .wrapper .merg .nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+  body .wrapper .merg .nav ul .box a {
+    margin-right: 1px;
+    padding: 15px;
+    width: 80px;
+  }
+}

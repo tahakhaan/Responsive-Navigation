@@ -1,0 +1,109 @@
+body {
+    background-color: rgb(247, 228, 152);
+    padding: 0;
+    margin: 0;
+    .wrapper {
+        .heading {
+            justify-content: space-around;
+            display: flex;
+            h1 {
+                background-color: white;
+                font-size: 18px;
+                padding: 10px;
+                margin: 0;
+            }
+        }
+        .nav {
+            margin-top: 40px;
+            ul {
+                padding: 0;
+                margin: 0;
+                .box {
+                    flex-direction: column;
+                    display: flex;
+                    padding: 0;
+                    margin: 0;
+                    a {
+                        background-color: burlywood;
+                        text-decoration: none;
+                        text-align: center;
+                        margin-top: 1px;
+                        color: black;
+                        padding: 20px;
+                    }
+                    a:hover {
+                        background-color: rgb(196, 162, 118);
+                        color: white;
+                    }
+                }
+            }
+        }
+        small {
+            justify-content: space-around;
+            padding: 50px;
+            display: flex;
+        }
+    }
+}
+
+@media (min-width: 500px) {
+    body {
+        background-color: darkkhaki;
+        .wrapper {
+            .merg {
+                .heading {
+                    h1 {
+                        font-size: 25px;
+                    }
+                }
+                .nav {
+                    ul {
+                        justify-content: space-around;
+                        flex-direction: row;
+                        display: flex;
+                        a {
+                            width: 80px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (min-width: 700px) {
+    body {
+        background-color: darkgray;
+        padding: 0;
+        margin: 0;
+        .wrapper {
+            .merg {
+                justify-content: space-between;
+                display: flex;
+                .heading {
+                    h1 {
+                        font-size: 30px;
+                        margin: 0;
+                    }
+                }
+                .nav {
+                    align-self: flex-end;
+                    margin: 0;
+                    ul {
+                        flex-direction: row;
+                        display: flex;
+                        .box {
+                            a {
+                                margin-right: 1px;
+                                padding: 15px;
+                                width: 80px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
